@@ -18,9 +18,4 @@ templateApp.config(['$routeProvider', function ($routeProvider) {
     })
     .otherwise({redirectTo: '/about'});
 }]);
-templateApp.controller('HeaderPartialCtrl', ['$scope', function ($scope) {
-}]);
 
-templateApp.controller('FooterPartialCtrl', ['$scope', function ($scope) {
-  // Do something...
-}]);

@@ -6,8 +6,8 @@
    <div class="thumbnail" id="img">
       <img src="img/dongvd.jpg" alt="dongvd.jpg">
       <div class="caption">
-        <h4>Võ Doãn Đồng</h4> 
-        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Team">Team Php</button>
+        <h4>{{person.fullname}}</h4> 
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Team">{{person.team}}</button>
       </div>
     </div>
 </div>
@@ -19,51 +19,51 @@
     <div class="panel-body">
       <dl class="dl-horizontal"><br>
         <dt>Full name:</dt>
-          <dd>DONG VO DOAN</dd>
+          <dd>{{person.fullname}}</dd>
         <dt>Birthday:</dt>
-          <dd>28/10/1994<dd>
+          <dd>{{person.birthday}}<dd>
         <dt>Gender:</dt>
-          <dd>Male<dd>
+          <dd>{{person.gender}}<dd>
         <dt>native land:</dt>
-          <dd>Quang Binh<dd>
+          <dd>{{person.nativeland}}<dd>
         <dt>Job Title:</dt>
-           <dd><span class="label label-info">Intership</span></dd>
+           <dd><span class="label label-info">{{person.job}}</span></dd>
         <dt>Team work:</dt>
-          <dd>PHP<dd>
+          <dd>{{person.team}}<dd>
         <dt>Work Email:</dt>
-          <dd>vddongbk@gmail.com</dd>
+          <dd>{{person.email}}</dd>
         <dt>Personal Email</dt>
-          <dd>vddongbk@gmail.com</dd>
+          <dd>{{person.email}}</dd>
         <dt>Phone Number:</dt>
-          <dd>(+84) 165 747 4245</dd>
+          <dd>{{person.phone}}</dd>
         <dt>Account github:</dt>
-          <dd><a href="https://github.com/at-dongvd"><img id="github" src="icon/github.png"> at-dongvd</a></dd>
+          <dd><a href="{{person.urlgit}}"><img id="github" src="icon/github.png"> {{person.github}}</a></dd>
         <dt>CV:</dt>
-          <dd><a href="https://i.topcv.vn/dongvodoan?ref=126024">https://i.topcv.vn/dongvodoan?ref=126024https://i.topcv.vn/dongvodoan?ref=126024</a></dd>
+          <dd><a href="{{person.urlcv}}">{{person.urlcv}}</a></dd>
          <dt>Knowledge:</dt><br><br>
           <dd>
               <div class="progress">
-                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: {{person.html}}">
                   <span>HTML/CSS</span>
                 </div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{person.js}}">
                   <span>Javascript</span>
                 </div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {{person.php}}">
                   <span>Php</span>
                 </div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: {{person.design}}">
                   <span>Design</span>
               </div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: {{person.english}}">
                   <span>English</span>
                 </div>
               </div>
