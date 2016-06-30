@@ -8,13 +8,19 @@ var templateApp = angular.module('templateApp', [
 
 templateApp.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
-    .when('/home', {
-      templateUrl: 'view/home.html',
-      controller: 'HomeController'
-    })
     .when('/about', {
       templateUrl: 'view/about.html',
       controller: 'AboutController'
     })
-    .otherwise({redirectTo: '/home'});
+    .when('/app', {
+      templateUrl: 'view/app.html',
+      controller: 'AppController'
+    })
+    .otherwise({redirectTo: '/about'});
+}]);
+templateApp.controller('HeaderPartialCtrl', ['$scope', function ($scope) {
+}]);
+
+templateApp.controller('FooterPartialCtrl', ['$scope', function ($scope) {
+  // Do something...
 }]);
