@@ -1,0 +1,17 @@
+{
+	"contact": {
+   		"facebook": "https://www.facebook.com/cu.spirit.1",
+   		"google": "https://plus.google.com/u/0/112014218644920549502/posts",
+   		"skype": "#",
+   		"instagram": "#",
+   		"twitter": "https://twitter.com/Cu_Spirit"
+	},
+
+	"icon": {
+		"facebook": "icon/facebook_dark.png",
+    	"google": "icon/google_dark.png",
+    	"skype": "icon/skype_dark.png",
+    	"instagram": "icon/in_dark.png",
+    	"twitter": "icon/twitter02_dark.png"
+	}
+}

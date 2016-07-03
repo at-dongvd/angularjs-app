@@ -4,7 +4,7 @@
     <img ng-src="{{person.image}}" alt="" class="img-responsive">
   </a> -->
    <div class="thumbnail" id="img">
-      <img src="img/dongvd.jpg" alt="dongvd.jpg">
+      <img src="{{person.picture}}" alt="dongvd.jpg">
       <div class="caption">
         <h4>{{person.fullname}}</h4> 
         <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Team">{{person.team}}</button>
@@ -38,6 +38,8 @@
           <dd>{{person.phone}}</dd>
         <dt>Account github:</dt>
           <dd><a href="{{person.urlgit}}"><img id="github" src="icon/github.png"> {{person.github}}</a></dd>
+        <dt>Account Skype:</dt>
+          <dd>{{person.skype}}</dd>
         <dt>CV:</dt>
           <dd><a href="{{person.urlcv}}">{{person.urlcv}}</a></dd>
          <dt>Knowledge:</dt><br><br>
