@@ -1,5 +1,67 @@
-<div ng-controller="HomeController" class="jumbotron">
-  <h1>Home view</h1>
-  <code>{{template}}</code>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, aliquid, officiis! Voluptatibus velit quo dignissimos voluptates debitis nam distinctio quis nulla, nisi incidunt, dolor esse dolores ab ullam delectus, quae?</p>
+<div class="row" ng-controller="AppController">
+    <div class="col col-md-12">
+     <div class="panel panel-default" id="backgr">
+      <div class="panel-body">
+
+          <legend class="text-center" id="legend">Currency Converter</legend>
+          <div id="key">
+          	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+           <div class="form-group">
+            <label for="" id="font">From: <img src="icon/{{fromType}}.png"></label>
+             <select 
+              ng-model="fromType" 
+              class="form-control"  
+              required  
+              data-ng-change="forExConvert()"
+              ng-options="key for (key, value) in rates track by value">
+              <option value="">--Select--</option>
+             </select>
+           </div> 
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+           <div class="form-group">
+            <label for="" id="font">To: <img src="icon/{{toType}}.png"></label>
+            <select 
+              ng-model="toType" 
+              class="form-control"  
+              required  
+              data-ng-change="forExConvert()"
+              ng-options="key for (key, value) in rates track by value">
+              <option value="">--Select--</option>
+             </select>
+           </div> 
+          </div>
+          </div>
+          <br>
+          <div id="value">
+          	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+           <div class="form-group">
+            <label for="" id="font">From Value:</label>
+            <input type="number" 
+            class="form-control"  
+            placeholder="Enter value" 
+            min="0" 
+            data-ng-model="fromValue"
+            data-ng-change="forExConvert()">
+           </div> 
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+           <div class="form-group">
+            <label for="" id="font">To Value:</label>
+            <input type="text" 
+            class="form-control"
+            disabled="true"  
+            placeholder="Result Currency Converter" 
+            data-ng-model="toValue"
+            data-ng-change="forExConvert()">
+           </div> 
+          </div>
+          </div>
+           
+
+    
+      </div>
+     </div> 
+    </div>
 </div>
+

@@ -70,3 +70,21 @@ a:hover {
 #github{
 	width: 20px;
 }
+.panel{
+	min-height: 500px;
+}
+#legend{
+	font-size: 30px;
+}
+#key{
+	margin-top: 40px;
+}
+#value{
+	margin-top: 100px;
+}
+#backgr{
+	background-image: url(../img/index2.jpg) ;
+}
+#font{
+	color: black;
+}
