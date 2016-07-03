@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/at-hungbcp/app-template.git"
+    "url": "https://github.com/at-dongvd/angularjs-app.git"
   },
-  "author": "Hung BCP",
+  "author": "at-dongvd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/at-hungbcp/app-template/issues"
+    "url": "https://github.com/at-dongvd/angularjs-app/issues"
   },
-  "homepage": "https://github.com/at-hungbcp/app-template#readme",
+  "homepage": "https://github.com/at-dongvd/angularjs-app/blob/master/README.md",
   "private": true,
   "devDependencies": {
     "bower": "^1.7.7",
