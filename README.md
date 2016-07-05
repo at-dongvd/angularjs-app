@@ -67,10 +67,11 @@ app/                           --> all of the source files for the application
     directives.js              --> custom directives
     filters.js                 --> custom filters
     services.js                --> custom services
+    custom.js                  --> custom js,jquery
   view/                        --> the view template
   	partials/                  --> part of page to include
-  		footer.html            --> footer of page
-  		header.html            --> header of page
+  		footer.html              --> footer of page
+  		header.html              --> header of page
     app.html                   --> the partial template for app page
     about.html                 --> the partial template for about page
 
