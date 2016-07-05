@@ -10,7 +10,7 @@
             <label for="" id="font">From: <img src="icon/{{fromType}}.png"></label>
              <select 
               ng-model="fromType" 
-              class="form-control"  
+              class="form-control input-lg"  
               required  
               data-ng-change="forExConvert()"
               ng-options="key for (key, value) in rates track by value">
@@ -23,7 +23,7 @@
             <label for="" id="font">To: <img src="icon/{{toType}}.png"></label>
             <select 
               ng-model="toType" 
-              class="form-control"  
+              class="form-control input-lg"  
               required  
               data-ng-change="forExConvert()"
               ng-options="key for (key, value) in rates track by value">
@@ -38,7 +38,7 @@
            <div class="form-group">
             <label for="" id="font">From Value:</label>
             <input type="number" 
-            class="form-control"  
+            class="form-control input-lg"  
             placeholder="Enter value" 
             min="0" 
             data-ng-model="fromValue"
@@ -49,7 +49,7 @@
            <div class="form-group">
             <label for="" id="font">To Value:</label>
             <input type="text" 
-            class="form-control"
+            class="form-control input-lg"
             disabled="true"  
             placeholder="Result Currency Converter" 
             data-ng-model="toValue"
